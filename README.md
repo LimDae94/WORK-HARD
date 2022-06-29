@@ -10,7 +10,7 @@
 <br>
 
 ### 📚 도서 목록
-- `자바의 정석 3/E`
+- [`자바의 정석 3/E`](https://github.com/LimDae94/java_studty/tree/main/java-3e)
 
 <br>
 
