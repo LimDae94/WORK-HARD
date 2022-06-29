@@ -5,12 +5,21 @@ public class Main {
 
 //      1. 변수 사용하기
         System.out.println("== 변수 사용하기 ==");
-
+        int age = 10;
+        String country = "Korea";
+        System.out.println(age);
+        System.out.println(country);
 
 //      2. 변수 이름 규칙
         System.out.println("== 변수 이름 규칙 ==");
 //      2-1. 문자, 숫자, _(underscore), $ 사용 가능
-
+        int apple = 2000;
+        int apple3 = 2000;
+        int _apple = 2000;
+        int $apple = 2000;
+        System.out.println($apple);
+        System.out.println("$apple = " + $apple);
+        
 //      2-2. 숫자로 시작 X
 
 //      2-3. 대소문자 구분
