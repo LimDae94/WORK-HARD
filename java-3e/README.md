@@ -25,7 +25,7 @@ Java의 정석 3/E(도우출판, 남궁성 지음)으로 자바를 독학하는�
 ## 내용 목록
 
 <B>Java의 정석(1/2)</B>
-- `Chapter 01 자바를 시작하기 전에`
+- [`Chapter 01 자바를 시작하기 전에`](https://github.com/LimDae94/java_studty/tree/main/java-3e/ch01)
 - `Chapter 02 변수(Variable)`
 - `Chapter 03 연산자(Operator)`
 - `Chapter 04 조건문과 반복문`
