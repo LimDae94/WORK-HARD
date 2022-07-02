@@ -29,7 +29,7 @@ Java의 정석 3/E(도우출판, 남궁성 지음)으로 자바를 독학하는�
 - [`Chapter 02 변수(Variable)`](https://github.com/LimDae94/WORK-HARD/tree/main/java-3e/ch02)
 - [`Chapter 03 연산자(Operator)`](https://github.com/LimDae94/WORK-HARD/tree/main/java-3e/ch03)
 - [`Chapter 04 조건문과 반복문`](https://github.com/LimDae94/WORK-HARD/tree/main/java-3e/ch04)
-- `Chapter 05 배열(Array)`
+- [`Chapter 05 배열(Array)`](https://github.com/LimDae94/WORK-HARD/tree/main/java-3e/ch05)
 - `Chapter 06 객체지향 프로그래밍 |`
 - `Chapter 07 객체지향 프로그래밍 ||`
 - `Chapter 08 예외처리(Exception Handling)`
