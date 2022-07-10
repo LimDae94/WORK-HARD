@@ -11,7 +11,7 @@
 
 ### 📚 도서 목록
 - [`자바의 정석 3/E`](https://github.com/LimDae94/java_studty/tree/main/java-3e)
-- 프로그래머의 뇌
+- [`프로그래머의 뇌`](https://github.com/LimDae94/WORK-HARD/tree/main/programmer's-Brain)
 
 <br>
 
