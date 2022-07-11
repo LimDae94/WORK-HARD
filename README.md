@@ -18,8 +18,8 @@
 <br>
 
 ### 코딩 테스트
-- python
-
+- [`python`](https://github.com/LimDae94/WORK-HARD/tree/main/coding-Test/python)
+- [`java`]()
 ### 💻 강의 목록
 - 
 
