@@ -19,7 +19,7 @@
 
 ### 코딩 테스트
 - [`python`](https://github.com/LimDae94/WORK-HARD/tree/main/coding-Test/python)
-- [`java`]()
+- [`java`](https://github.com/LimDae94/WORK-HARD/tree/main/coding-Test/java)
 ### 💻 강의 목록
 - 
 
