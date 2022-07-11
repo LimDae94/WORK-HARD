@@ -14,7 +14,7 @@
 ### 📚 도서 목록
 - [`자바의 정석 3/E | 도우출판`](https://github.com/LimDae94/java_studty/tree/main/java-3e)
 - [`프로그래머의 뇌 | 제이펍`](https://github.com/LimDae94/WORK-HARD/tree/main/programmer's-Brain)
-
+- [`점프 투 파이썬 | 이지스퍼블리싱`](https://github.com/LimDae94/WORK-HARD/tree/main/jump-to-python)
 <br>
 
 ### 코딩 테스트
