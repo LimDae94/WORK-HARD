@@ -1,9 +1,5 @@
 # CHAPTER 1 코딩 중 겪는 혼란에 대한 이해
 
-<img src="https://img.ridicdn.net/cover/852001285/xxlarge?dpi=xxhdpi#1" alt="1" style="zoom:30%;" />
-
-[프로그래머의 뇌](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791191600650&orderClick=LEa&Kc=) ([펠리너 헤르만스] 지음 | [차건회] 옮김 | [제이펍]|)의 내용을 정리한 내용입니다.
-
 <br>
 
 > 코딩 중에 혼란이 발생하는 다양한 방식의 차이점 이해
