@@ -377,7 +377,7 @@ class TvTest {
 
 3. **t.channel = 7;**
 
-참조변수 `t`에 저장된 주소에 있는 인스턴스의 멤버변수 `channel`에 `7`을 저장한다. 여기서 알 수 있는 것처럼, 인스턴스의 멤버변수 (속성)를 사용하려면 **"참조변수.멤버변수" **와 같이 하면 된다.
+참조변수 `t`에 저장된 주소에 있는 인스턴스의 멤버변수 `channel`에 `7`을 저장한다. 여기서 알 수 있는 것처럼, 인스턴스의 멤버변수 (속성)를 사용하려면 **"참조변수.멤버변수"** 와 같이 하면 된다.
   
 <div align=center>
     <img src="https://velog.velcdn.com/images/piay801/post/782e0695-df29-499b-b99f-f9daccfba231/image.jpg" alt="4" style="zoom:50%;" />
