@@ -50,6 +50,6 @@ print("{0:<10}".format("hi"))   #hi
 print("{0:>10}".format("hi"))   #        hi
 print("{0:^10}".format("hi"))   #    hi
 
-print(f'{"hi":=^10}')
-print(f'{"hi":!<10}')
-print(f'{"hi":!>10}')
+print(f'{"hi":=^10}')   # ====hi====
+print(f'{"hi":!<10}')   # hi!!!!!!!!
+print(f'{"hi":!>10}')   # !!!!!!!!hi
