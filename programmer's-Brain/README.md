@@ -24,7 +24,7 @@
 ### PART I 코드 더 잘 읽기
 - [`CHAPTER 1 코드 중 겪는 혼란에 대한 이해`](https://github.com/LimDae94/WORK-HARD/tree/main/programmer's-Brain/ch01)
 - [`CHAPTER 2 신속한 코드 분석`](https://github.com/LimDae94/WORK-HARD/tree/main/programmer's-Brain/ch02)
-- CHAPTER 3 프로그래밍 문법 빠르게 배우기
+- [`CHAPTER 3 프로그래밍 문법 빠르게 배우기`](https://github.com/LimDae94/WORK-HARD/tree/main/programmer's-Brain)
 - CHAPTER 4 복잡한 코드 읽는 방법
 
 <br>
