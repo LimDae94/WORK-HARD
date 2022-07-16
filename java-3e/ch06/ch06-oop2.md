@@ -9,7 +9,7 @@
 
 이처럼 한 클래스 내에 같은 이름의 매서드를 여러 개 정의하는 것을 **메서드 오버로딩(method overloading) 또는 오버로딩(overloading)**이라고 합니다. 하나의 메서드 이름으로 여러 기능을 구현하기 때문에 붙여진 이름이라 생각하실 수 있습니다.
 
-> overloading	vt. 과적하다; 너무 많이 주다[부과하다]; n. 지나치게 많음, 과부하
+> overloading   vt. 과적하다; 너무 많이 주다[부과하다]; n. 지나치게 많음, 과부하
 
 
 
@@ -93,6 +93,8 @@ long add(long x, int y) { return (long)(a+b); }
 
 ## 4.4 오버로딩의 장점
 
+<br>
+
 이미 오버로딩된 `println`메서드 하나만으로 장점은 크게 와닿고 있지 않나요? 하나의 이름으로 정의하니까 기억하기도 쉽고, 사용하기도 쉬운 장점이 있습니다. 아래에서는 한 번 오버로딩 찐~~~하게 코드로 학습하는 시간 가져볼까요?
 
 ```java
@@ -146,11 +148,15 @@ class MyMath3 {
 
 ## 4.5 가변인자(varargs)와 오버로딩
 
+<br>
+
 JDK1.5 이전에는 메서드의 매개변수 개수가 고정적이었습니다. 이후에는 동적으로 지정해 줄 수 있게 되었으며, 이 기능을 **가변인자(variable arguments)**라고 합니다.
 
 > 가변인자는 `타입... 변수명` 형식으로 선언하고, `PrintStream`클래스의 `printf()`가 대표적이다.
 >
-> `public PrintStream printf(String format, Object... args) { ... }`
+> ```
+> public PrintStream printf(String format, Object... args) { ... }
+> ```
 
 가변인자 외에도 매개변수가 더 있을 경우, 가변인자를 매개변수 중에서 제일 마지막에 선언해야 합니다. 그렇지 않으면, 컴파일 에러가 발생합니다. 가변인자인지 아닌지를 구별할 수 있는 방법이 없기 때문에 허용하지 않는 것입니다.
 
@@ -181,10 +187,10 @@ String concatenate(String ... str) { ... }
 가변인자 사용으로 메서드를 호출할 때는 아래처럼 인자의 개수를 가변적으로 작성할 수 있습니다. 심지어는 인자가 아예 없어도 되고, 배열도 인자가 될 수 있습니다! 활용할 수 있는 범위가 대폭 증가할 수 있죠?
 
 ```java
-System.out.println(concatenate());	// 인자가 없어도 가능
-System.out.println(concatenate("a"));	// 인자 1개
-System.out.println(concatenate("a", "b"));	//	인자 2개
-System.out.println(concatenate(new String[]{"A", "B"}));	// 배열도 가능
+System.out.println(concatenate());  // 인자가 없어도 가능
+System.out.println(concatenate("a"));   // 인자 1개
+System.out.println(concatenate("a", "b"));  //  인자 2개
+System.out.println(concatenate(new String[]{"A", "B"}));    // 배열도 가능
 ```
 
 <br>
@@ -231,10 +237,10 @@ public class VarArgsEx {
         return result;
     }
     /*
-    	두 오버로딩된 메서드가 구분되지 않아서 발생하는 에러입니다.
-    	가변인자를 선언한 메서드를 오버로딩하면, 메서드를 호출했을 때,
-    	이와 같이 구별되지 못하는 경우가 발생하기 쉽기 때문에 주의를 해야 합니다. 
-    	가능하면 가변인자를 사용한 메서드는 오버로딩 하지 않는 것이 좋습니다.
+        두 오버로딩된 메서드가 구분되지 않아서 발생하는 에러입니다.
+        가변인자를 선언한 메서드를 오버로딩하면, 메서드를 호출했을 때,
+        이와 같이 구별되지 못하는 경우가 발생하기 쉽기 때문에 주의를 해야 합니다. 
+        가능하면 가변인자를 사용한 메서드는 오버로딩 하지 않는 것이 좋습니다.
     */
     /*
         static String concatenate(String ... args) {
@@ -259,9 +265,11 @@ System.out.println(concatenate("-", new String[]{"1", "2", "3"}));
 System.out.println(concatenate("-", {"1", "2", "3"}));
 ~~~
 
-
+<br>
 
 # 생성자(constructor)
+
+<br>
 
 ## 5.1 생성자란?
 
@@ -274,16 +282,16 @@ System.out.println(concatenate("-", {"1", "2", "3"}));
 
 ```java
 클래스이름(타입 변수명, 타입 변수명, ... ) {
-	// 인스턴스 생성 시 수행될 코드,
-	// 주로 인스턴스 변수의 초기화 코드를 적는다.
+    // 인스턴스 생성 시 수행될 코드,
+    // 주로 인스턴스 변수의 초기화 코드를 적는다.
 }
 
 class Card {
-    Card() {	// 매개변수가 없는 생성자
+    Card() {    // 매개변수가 없는 생성자
         ...
     }
     
-    Card(String k, int num) {	// 매개변수가 있는 생성자
+    Card(String k, int num) {   // 매개변수가 있는 생성자
         ...
     }
     ...
@@ -294,7 +302,9 @@ class Card {
 
 생성자라는 용어 때문에 오해하기 쉬운데, 생성자는 단순히 인스턴스변수들의 초기화에 사용되는 조금 특별한 메서드일 뿐입니다. 생성자가 갖는 몇 가지 특징만 제외하면 메서드와 전혀 다르지 않습니다. `Card c = new Card();` 수행되는 과정으로 알아보겠습니다.
 
-> `Card c = new Card();`
+> ```
+> Card c = new Card();
+> ```
 >
 > 1. 연산자 `new`에 의해서 메모리(heap)에 `Card`클래스의 인스턴스가 생성됩니다.
 > 2. 생성자 `Card()`가 호출되어 수행됩니다.
@@ -305,6 +315,8 @@ class Card {
 <br>
 
 ## 5.2 기본 생성자(default constructor)
+
+<br>
 
 1. 모든 클래스에는 반드시 하나 이상의 생성자가 정의되어 있음
 
@@ -326,16 +338,18 @@ class Card {
 
 ## 5.3 매개변수가 있는 생성자
 
+<br>
+
 1. 인스턴스마다 각기 다른 값으로 최기화 되어야하는 경우, 매개변수를 사용한 초기화는 매우 유용
 
 ```java
-class Car {	// 매개변수 없는 생성자
+class Car { // 매개변수 없는 생성자
     String color;
     String gearType;
     int door;
     Car() {}
 
-    Car(String c, String g, int d) {	// 매개변수 있는 생성자
+    Car(String c, String g, int d) {    // 매개변수 있는 생성자
         color = c;
         gearType = g;
         door = d;
@@ -355,9 +369,6 @@ class Ex6_12 {
         System.out.println("c2 color=" + c2.color + ", gearType=" + c2.gearType+ ", door="+c2.door);
     }
 }
-```
-
-```java
 // 출력 결과
 c1 color=white, gearType=auto, door=4
 c2 color=white, gearType=auto, door=4
@@ -369,7 +380,340 @@ c2 color=white, gearType=auto, door=4
 
 ## 5.4 생성자에서 다른 생성자 호출하기 - this(), this
 
+<br>
+
 > 생성자의 이름으로 클래스이름 대신 `this`를 사용
 >
 > 한 생성자에서 다른 생성자를 호출할 때는 반드시 첫 줄에서만 호출이 가능
+
+this 는 참조변수로 인스턴스 자신을 가리킵니다. 참조변수를 통해 인스턴스의 멤버에 접근할 수 있는 것처럼, this 로 인스턴스변수에 접근할 수 있는 것입니다. 하지만, **this 를 사용할 수 있는 것은 인스턴스멤버** 뿐입니다. 왜냐하면, static 메서드는 인스턴스를 생성하지 않고도 호출될 수 있으므로, static 메서드가 호출된 시점에 인스턴스가 존재하지 않을 수 있기 떄문입니다.
+
+<br>
+
+### this 는 언제 사용하는 것일까?
+
+생성자의 매개변수와 인스턴스변수들의 초기값을 제공받는경우가 많기 때문에 매개변수와 인스턴스변수의 이름이 일치하는 경우가 많습니다. 이 때에는 매개변수이름으로 다르게 하는 것 보다, this 를 사용해서 구별되도록 하는 것이 의미가 더 명확하고 이해하기 쉽습니다. 
+
+```java
+class Car2 {
+    String color;		// 색상
+    String gearType;	// 변속기 종류 - auto(자동), manual(수동)
+    int door;			// 문의 개수
+
+    Car2() {    // 생성자 1
+        this("white", "auto", 4); //Car2(String color, String gearType, int door)를 호출
+    }
+
+    Car2(String color) {    // 생성자 2
+        this(color, "auto", 4);
+    }
+
+    Car2(String color, String gearType) {   // 생성자 3
+        this(color, gearType, 4);
+    }
+    
+    // this.color -> 인스턴스변수이고, 
+    // color 는 생성자의 매개변수로 정의된 지역변수로 서로 구별이 가능
+    Car2(String color, String gearType, int door) {
+        this.color = color;
+        this.gearType = gearType;
+        this.door = door;
+    }
+}
+class CarTest2 {
+    public static void main(String[] args) {
+        Car2 c1 = new Car2();
+        Car2 c2 = new Car2("blue");
+        Car2 c3 = new Car2("green", "auto");
+
+        System.out.println("c1의 color=" + c1.color + ", gearType=" + c1.gearType+ ", door="+c1.door);
+        System.out.println("c2의 color=" + c2.color + ", gearType=" + c2.gearType+ ", door="+c2.door);
+        System.out.println("c3의 color=" + c3.color + ", gearType=" + c3.gearType+ ", door="+c3.door);
+    }
+}
+```
+
+
+
+
+
+<br>
+
+> this ➡️ 인스턴스 자신을 가리키는 참조변수, 인스턴스의 주소가 저장되어 있다.
+>
+> this(), this(매개변수) ➡️ 생성자, 같은 클래스의 다른 생성자를 호출할 때 사용한다.
+
+<br>
+
+
+
+🐜 this 는 "참조 변수" 이고, this( ) 는 "생성자" 입니다.
+
+
+
+## 5.3 생성자를 이용한 인스턴스의 복사
+
+<br>
+
+> 현재 사용하고 있는 인스턴스와 같은 상태를 갖는 인스턴스를 하나 더 만들고자 할 때 사용한다.
+
+하나의 클래스로부터 생성된 모든 인스턴스의 메서드와 클래스변수는 서로 동일하기 때문에 인스턴스간의 차이는, 인스턴스마다 각기 다른 값을 가질 수 있는 인스턴스변수 뿐입니다.
+
+~~~ java
+class Car {
+    String color;		// 색상
+    String gearType;	// 변속기 종류 - auto(자동), manual(수동)
+    int door;			// 문의 개수
+
+    Car() {    // 생성자 1
+        this("white", "auto", 4); //Car2(String color, String gearType, int door)를 호출
+    }
+
+//    Car(Car c) {    // 인스턴스 복사를 위한 생성자
+//        color = c.color;
+//        gearType = c.gearType;
+//        door = c.door;
+//    }
+
+    Car(Car c) {	// 인스턴스 복사를 위한 생성자로, 기존의 코드를 활용할 줄 알아야 합니다!
+        this(c.color, c.gearType, c.door);
+    }
+
+
+    Car(String color, String gearType, int door) {
+        this.color = color;
+        this.gearType = gearType;
+        this.door = door;
+    }
+
+
+}
+class CarTest3 {
+    public static void main(String[] args) {
+        Car c1 = new Car();
+        Car c2 = new Car(c1);   // c1 의 복사본 c2 를 생성한다.
+
+        System.out.println("c1의 color=" + c1.color + ", gearType=" + c1.gearType+ ", door="+c1.door);
+        System.out.println("c2의 color=" + c2.color + ", gearType=" + c2.gearType+ ", door="+c2.door);
+
+        // c1 의 인스턴스변수 door 의 값을 변경한다.
+        // 위에서 복사한 c2 의 인스턴스변수 door 는 어떻게 될까?
+        c1.door = 100;
+
+        System.out.println("c1의 color=" + c1.color + ", gearType=" + c1.gearType+ ", door="+c1.door);
+        System.out.println("c2의 color=" + c2.color + ", gearType=" + c2.gearType+ ", door="+c2.door);
+    }
+}
+~~~
+
+~~~ java
+/* 출력 결과 */
+c1의 color=white, gearType=auto, door=4
+c2의 color=white, gearType=auto, door=4
+c1의 color=white, gearType=auto, door=100
+c2의 color=white, gearType=auto, door=4
+~~~
+
+인스턴스 c2 는 c1 을 복사하여 생성된 것이므로 서로 같은 상태를 갖지만, 서로 독립적으로 메모리공간에 존재하는 별도의 인스턴스이므로 c1 의 값들이 변경되어도 c2 는 영향을 받지 않습니다! 생성자를 잘 활용하면 보다 더 간결하고 직관적인, 객체지향적인 코드를 작성할 수 있습니다. :) 
+
+<br>
+
+> 인스턴스를 생성할 떄는 다음의 2가지 사항을 결정해야 한다.
+>
+> 1. 클래스 ➡️ 어떤 클래스의 인스턴스를 생성할 것인가?
+> 2. 생성자 ➡️ 선택한 클래스의 어떤 생성자로 인스턴스를 생성할 것인가?
+
+
+
+<br>
+
+# 변수의 초기화
+
+<br>
+
+## 6.1 변수의 초기화
+
+<br>
+
+> 변수를 선언하고 처음으로 값을 지정하는 것을 "변수의 초기화" 라고 한다.
+
+<br>
+
+**지역변수**
+
+- 사용하기 전에 반드시 초기화해야 합니다.
+
+
+
+**멤버변수**
+
+- 자동적으로 자료형에 맞는 **기본값으로 초기화**가 가능합니다.
+
+  
+
+  각 타입의 기본값은 다음과 같습니다.
+
+  |      자료형      |    기본값     |
+  | :--------------: | :-----------: |
+  |     boolean      |     false     |
+  |       char       |   '\u0000'    |
+  | byte, short, int |       0       |
+  |       long       |      0L       |
+  |      float       |     0.0f      |
+  |      double      | 0.0d 또는 0.0 |
+  |    참조형변수    |     null      |
+
+  <br>
+
+~~~java
+class InitTest {
+	int x;	// 인스턴스 변수
+    int y = x;	// 인스턴스 변수
+    
+    void method1() {
+        int i;	// 지역변수
+        int j = i;	// 에러, 지역변수를 초기화하지 않고 사용
+    }
+}
+~~~
+
+<br>
+
+> 멤버변수의 초기화 방법
+>
+> 1. **명시적 초기화(explicit initalization)**
+> 2. **생성자(constructor)**
+> 3. **초기화 블럭(initialization block)**
+>    - 인스턴스 초기화 블럭 : 인스턴스변수를 초기화 하는데 사용
+>    - 클래스 초기화 블럭 : 클래스변수를 초기화 하는데 사용
+
+<br>
+
+## 6.2 명시적 초기화(explicit initalization)
+
+
+
+<br>
+
+> 변수를 선언과 동시에 초기화하는 것을 명시적 초기화라고 한다.
+
+명시적 초기화가 간단하고 명료 하지만, 보다 복잡한 초기화 작업이 필요할 때는 "초기화 블럭(initialization block)" 또는 생성자를 사용해야 합니다.
+
+<br>
+
+## 6.3 초기화 블럭(initialization block)
+
+<br>
+
+> **초기화 블럭의 두 가지 종류**
+>
+> - 인스턴스 초기화 블럭 : 인스턴스변수를 초기화 하는데 사용
+> - 클래스 초기화 블럭 : 클래스변수를 초기화 하는데 사용
+
+1. 인스턴스 초기화 블럭은 단순히 클래스 내에 블럭 `{ }` 을 만들고 그 안에 코드를 작성하기만 하면 됩니다.
+   - 생성자 보다 인스턴스 초기화 블럭이 먼저 수행됩니다.
+
+2. 클래스 초기화 블럭은 인스턴스 초기화 블럭 앞에 단순히 `static` 을 덧붙이기만 하면 됩니다.
+   - 메모리에 처음 로딩될 때 한 번만 수행됩니다.
+
+~~~java
+class InitBlock {
+	static { /* 클래스 초기화블럭 입니다. */ }
+    
+    { /* 인스턴스 초기화 블럭 입니다. */ }
+}
+~~~
+
+<br>
+
+🐝 인스턴스 변수의 초기화는 주로 생성자를 사용
+
+🐝인스턴스 초기화 블럭은 모든 생성자에서 공통으로 수행돼야 하는 코드를 넣는데 사용
+
+~~~java
+Car() {
+	count++;	// 중복 발생 
+    serialNo = count;	// 중복 발생 
+    color = "White";
+    gearType = "Auto";
+}
+
+Car(String color, String gearType) {
+    count ++;	// 중복 발생 
+    serialNo = count;	// 중복 발생 
+    this.color = color;
+    this.gearType = gearType;
+}
+~~~
+
+~~~java
+{ // 중복된 부분을 인스턴스 초기화 블럭 안에 작성
+	count++;	 
+    serialNo = count;	
+}
+
+Car() {
+    color = "White";
+    gearType = "Auto";
+}
+
+Car(String color, String gearType) {
+    this.color = color;
+    this.gearType = gearType;
+}
+~~~
+
+**인스턴스 초기화 블럭의 장점**
+
+- 중복의 제거해서 코드의 신뢰성을 높여주고, 오류의 발생가능성을 줄여 줄 수 있다.
+- 재사용성을 높이고 중복을 제거하는 것으로 객체지향프로그래밍이 추구하는 궁극적인 목표
+
+<br>
+
+## 6.4 멤버변수의 초기화 시기와 순서
+
+<br>
+
+> 클래스변수의 초기화 시점 ➡️ 클래스가 처음 로딩될 때 단 한 번 초기화 된다.
+>
+> 인스턴스변수의 초기화 시점 ➡️ 인스턴스가 생성될 때마다 각 인스턴스별로 초기화가 이루어진다.
+>
+> 클래스변수의 초기화 순서 ➡️ 기본값 → 명시적초기화 → 클래스 초기화 블럭
+>
+> 인스턴스변수의 초기화 순서 ➡️  기본값 → 명시적초기화 → 인스턴스 초기화 블럭  → 생성자
+
+~~~java
+class InitTest {
+    static int cv = 1;	// 클래스변수 명시적 초기화
+    int iv = 1;	// 인스턴스변수 명시적 초기화
+    
+    static { cv = 2; }	// 클래스 초기화 블럭
+    { iv = 2; }	// 인스턴스 초기화 블럭
+    
+    InitTest () { iv = 3; }	// 생성자
+}
+~~~
+
+<br>
+
+~~~java
+public class arrayEx {
+
+    static int[] arr = new int[10]; // 명시적 선언, 0으로 자동 초기화
+
+    static {    // 클래스 초기화 블럭
+        for (int i = 0; i < arr.length; i++) {
+            // 1과 10사이의 임의의 값을 배열 arr 에 저장한다.
+            arr[i] = (int) (Math.random() * 10) + 1;
+        }
+    }
+
+    public static void main(String args[]) {
+        for (int i = 0; i < arr.length; i++)
+            System.out.println("arr[" + i + "] :" + arr[i]);
+    }
+
+}
+
+~~~
 
