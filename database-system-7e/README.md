@@ -27,6 +27,7 @@
 <br>
 
 ### PART 1 관계형 언어
+- CHAPTER 02 관계형 모델 소개
 - CHAPTER 03 SQL 소개
 - CHAPTER 04 중급 SQL
 - CHAPTER 05 고급 SQL
