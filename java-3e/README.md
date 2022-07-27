@@ -32,7 +32,8 @@ Java의 정석 3/E(도우출판, 남궁성 지음)으로 자바를 독학하는�
 - [`Chapter 05 배열(Array)`](https://github.com/LimDae94/WORK-HARD/tree/main/java-3e/ch05)
 - [`Chapter 06 객체지향 프로그래밍 |`](https://github.com/LimDae94/WORK-HARD/tree/main/java-3e/ch06) 
 - [`Chapter 07 객체지향 프로그래밍 ||`](https://github.com/LimDae94/WORK-HARD/tree/main/java-3e/ch07)
-- `Chapter 08 예외처리(Exception Handling)`
+- [`Chapter 08 예외처리(Exception Handling)`](https://github.com/LimDae94/WORK-HARD/tree/main/java-3e/ch08)
+- [`Chapter 09 java.lang패키지와 유용한 클래스`](https://github.com/LimDae94/WORK-HARD/tree/main/java-3e/ch09)
 
 ```
 공부를 진행하면서 지속적으로 업데이트하고 있습니다.
