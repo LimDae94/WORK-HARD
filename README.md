@@ -8,7 +8,7 @@
 - `운영체제`
 - `자료구조`
 - `알고리즘`
-
+- [`컴퓨터구조`](https://github.com/LimDae94/WORK-HARD/tree/main/Computer-Structure)
 <br>
 
 ### 📚 도서 목록
