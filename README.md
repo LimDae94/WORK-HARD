@@ -22,7 +22,7 @@
 - [`python`](https://github.com/LimDae94/WORK-HARD/tree/main/coding-Test/python)
 - [`java`](https://github.com/LimDae94/WORK-HARD/tree/main/coding-Test/java)
 ### 💻 강의 목록
-- 
+- [`boostcource 자바로 구현하고 배우는 자료구조 | Rob Edwards`](https://github.com/LimDae94/WORK-HARD/tree/main/CS204-Rob-Edwards)
 
 
 
